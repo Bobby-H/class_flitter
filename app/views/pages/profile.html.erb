@@ -6,17 +6,19 @@
   </div>
 </div>
 <div class="row">
-<div class="col-xs-3">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>Fleets</p>
+    <div class="col-xs-3">
+      <% for @p in @posts do  %>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @p.content  %>
+        </div>
+      </div>
+      <% end %>
     </div>
-  </div>
-</div>
 <div class="col-xs-6">
   <div class="panel panel-default">
     <div class="panel-body">
-      Your timeline is currently empty.
+      <%= render 'layouts/components/post_form' %>
     </div>
   </div>
 </div>
