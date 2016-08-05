@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :pages
 
   get '/home' => 'pages#home'
-  get '/profile' => 'pages#profile'
+  get '/user/:id' => 'pages#profile'
   get '/explore' => 'pages#explore'
   get '/settings' => 'pages#settings'
   get '/friends' => 'pages#friends'
