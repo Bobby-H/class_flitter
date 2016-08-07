@@ -1,10 +1,11 @@
 <%= form_for(@newPost) do |f| %>
   <div class="field">
-    <%= f.label :content %>
+    <%= f.label :content, "The fleet is mightier than the sword ..." %>
+  </div>
+  <div class="field">
     <%= f.text_field :content, autofocus: true %>
   </div>
-
   <div class="actions">
-    <%= f.submit "Add Post" %>
+    <%= f.submit "Add Fleet" %>
   </div>
 <% end %>

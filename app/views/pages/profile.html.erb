@@ -1,12 +1,25 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="jumbotron">
-      <h1><%= current_user.username %></h1>
+      <center><h1><%= current_user.username %></h1></center>
     </div>
   </div>
 </div>
+
 <div class="row">
-    <div class="col-xs-3">
+  <div class="col-xs-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Profile</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <center><%= render 'layouts/components/post_form' %></center>
+        </div>
+      </div>
       <% for @p in @posts do  %>
       <div class="panel panel-default">
         <div class="panel-body">
@@ -15,24 +28,19 @@
       </div>
       <% end %>
     </div>
-<div class="col-xs-6">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <%= render 'layouts/components/post_form' %>
+    <div class="col-xs-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>Who to Follow</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="col-xs-3">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>Who to Follow</p>
+    <div class="col-xs-3 col-xs-offset-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>trends</p>
+        </div>
+      </div>
     </div>
+
   </div>
-</div>
-<div class="col-xs-3 col-xs-offset-9">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>trends</p>
-    </div>
-  </div>
-</div>

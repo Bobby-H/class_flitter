@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'posts/create'
 
   devise_for :users
-  root 'pages#index'
+  root 'pages#home'
   resources :pages
   resources :posts
 
