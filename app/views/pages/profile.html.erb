@@ -5,32 +5,34 @@
     </div>
   </div>
 </div>
+
 <div class="row">
-<div class="col-xs-3">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>Fleets</p>
+  <div class="col-xs-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Profile</p>
+      </div>
     </div>
   </div>
-</div>
-<div class="col-xs-6">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      Your timeline is currently empty.
+    <div class="col-xs-6">
+      <% for @p in @posts %>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= @p.content %>
+        </div>
+      </div>
+      <% end %>
     </div>
-  </div>
-</div>
-<div class="col-xs-3">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>Who to Follow</p>
+  <div class="col-xs-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>Who to Follow</p>
+      </div>
     </div>
-  </div>
-</div>
-<div class="col-xs-3 col-xs-offset-9">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>trends</p>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>trends</p>
+      </div>
     </div>
   </div>
 </div>
